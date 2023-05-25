@@ -34,33 +34,38 @@ ExpandedIf(
   child: Container(
     // your code here
   ),
-) ```
+) 
+```` 
 
 In this case, the Expanded widget will only render if condition is true. This is equivalent to the following standard Flutter code:
 
-
-    if (true) {
-      Expanded(
-        flex: 2,
-        child: Container(
-          // your code here
-        ),
-      );
-    } else {
-      SizedBox();
-    }
+```dart
+if (true) {
+  Expanded(
+    flex: 2,
+    child: Container(
+      // your code here
+    ),
+  );
+} else {
+  SizedBox();
+}
+```` 
 
 As you can see, using ExpandedIf significantly reduces the amount of code and makes it easier to read. This becomes especially useful when you have many widgets that need to conditionally render.
 
 Remember, you can replace true with any boolean expression. For example, you could conditionally render a widget based on whether a user is logged in:
 
-    ExpandedIf(
-      condition: user.isLoggedIn,
-      flex: 2,
-      child: Container(
-        // your code here
-      ),
-    )
+```dart
+ExpandedIf(
+  condition: user.isLoggedIn,
+  flex: 2,
+  child: Container(
+    // your code here
+  ),
+)
+```` 
+
 
 This will only render the Expanded widget if user.isLoggedIn is true. Otherwise, it will render a SizedBox.
 
