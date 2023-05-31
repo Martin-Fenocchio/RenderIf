@@ -1,10 +1,11 @@
 name: renderif
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: RenderIf simplifies code and enhances readability in Flutter apps. It introduces a new approach to conditional rendering using a boolean parameter in commonly used widgets
+version: 1.0.0
+homepage: https://github.com/Novak-Fenocchio/RenderIf.git
+repository: https://github.com/Novak-Fenocchio/RenderIf.git
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: ">=2.18.6 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
